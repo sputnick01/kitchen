@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrolme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="ltr">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="true"
+        android:layout_gravity="bottom"
+        app:cardUseCompatPadding="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        android:clickable="true"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/zibazi"
+                    app:tint="@color/MainTextColor" />
+
+                <TextView
+                    android:id="@+id/id_txtlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="LOGIN"
+                    android:textColor="@color/BlackColor"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <!--            Username-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:background="@drawable/tb_bg2"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/edit_text_icon_size"
+                        android:layout_height="@dimen/edit_text_icon_size"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_baseline_person_24" />
+
+                    <EditText
+                        android:id="@+id/id_name_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightEditTextSize"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/marginEditText"
+                        android:layout_marginRight="@dimen/marginEditText"
+                        android:background="@null"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textColor="@color/TextColor"
+                        android:textColorHint="@color/TextColor"
+                        android:textSize="@dimen/textSize"
+
+                        />
+
+                </LinearLayout>
+                <!--            password-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:background="@drawable/tb_bg2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/edit_text_icon_size"
+                        android:layout_height="@dimen/edit_text_icon_size"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_baseline_lock_24" />
+
+                    <EditText
+                        android:id="@+id/id_password_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightEditTextSize"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:hint="Password"
+                        android:layout_marginLeft="@dimen/marginEditText"
+                        android:layout_marginRight="@dimen/marginEditText"
+                        android:inputType="numberPassword"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/TextColor"
+                        android:textColorHint="@color/TextColor"
+                        android:textSize="@dimen/textSize" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:background="@drawable/tb_bg"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/marginRight"
+                    android:text="Forgot Password ?"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not Registered ? "
+                        android:textColor="#6F7477"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/id_txtGotoReg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Create Account"
+                        android:textColor="@color/MainTextColor"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Password must have at least 8 characters*"
+                    android:layout_gravity="center"
+                    android:id="@+id/textError"
+                    android:visibility="gone"
+                    android:textColor="@color/MainTextColor"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

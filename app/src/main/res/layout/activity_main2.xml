@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/Rel_image_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/header_icon"
+                android:layout_width="@dimen/image_header_dimen"
+                android:layout_height="@dimen/image_header_dimen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/image_header_top_margin"
+                android:src="@drawable/zibazi" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+
+            <RelativeLayout
+                android:id="@+id/rellay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/login_name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:id="@+id/liley1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_login"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="5dp"
+                            android:autofillHints="yes"
+                            android:background="@drawable/tb_bg2"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="@string/hint"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="5dp"
+                            android:autofillHints="yes"
+                            android:background="@drawable/tb_bg2"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="@string/enter_password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="60dp"
+                        android:background="@drawable/tb_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:text="@string/login_sub"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fontFamily="sans-serif"
+                android:text="@string/login_reg"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:fontFamily="sans-serif"
+                android:text="@string/login_for_pass"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

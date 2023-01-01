@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_water2"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Register"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="25dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Register_editText_name_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="Name"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="@dimen/edit_text_size" />
+
+                        <ImageView
+                            android:layout_width="@dimen/edit_text_icon_size"
+                            android:layout_height="@dimen/edit_text_icon_size"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_person2">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#656060" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Register_editText_lastName_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="LastName"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="@dimen/edit_text_size" />
+
+                        <ImageView
+                            android:layout_width="@dimen/edit_text_icon_size"
+                            android:layout_height="@dimen/edit_text_icon_size"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_person2">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#656060" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/Register_editText_phoneNumber_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="PhoneNumber"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="@dimen/edit_text_size" />
+
+                        <ImageView
+                            android:layout_width="@dimen/edit_text_icon_size"
+                            android:layout_height="@dimen/edit_text_icon_size"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_baseline_contact_phone_24">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#656060" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/id_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="UserName"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="@dimen/edit_text_size" />
+
+                        <ImageView
+                            android:layout_width="@dimen/edit_text_icon_size"
+                            android:layout_height="@dimen/edit_text_icon_size"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_baseline_supervised_user_circle_24">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#656060" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/id_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="Password"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="@dimen/edit_text_size" />
+
+                        <ImageView
+                            android:layout_width="@dimen/edit_text_icon_size"
+                            android:layout_height="@dimen/edit_text_icon_size"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/iconlock">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#656060" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/id_ConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="Confirm password"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="@dimen/edit_text_size" />
+
+                        <ImageView
+                            android:layout_width="@dimen/edit_text_icon_size"
+                            android:layout_height="@dimen/edit_text_icon_size"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/iconlock">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/id_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#656060" />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/tb_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Enter"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

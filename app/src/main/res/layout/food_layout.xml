@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layoutDirection="rtl"
+    android:layout_margin="5dp"
+    android:id="@+id/cardview_adapter"
+    app:cardBackgroundColor="@color/bg_widget"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_food"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_food"
+            android:gravity="start"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/name_food"
+            android:layout_marginHorizontal="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_food"
+            android:gravity="start"
+            android:maxLength="100"
+            android:layout_below="@id/name_food"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/description_food"
+            android:layout_marginHorizontal="10dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

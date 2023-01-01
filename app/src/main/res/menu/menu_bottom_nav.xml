@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/id_bottomNav_home"
+        android:icon="@drawable/icon_home"
+        android:title="خانه" />
+    <item
+        android:id="@+id/id_bottomNav_search"
+        android:icon="@drawable/icon_search"
+        android:title="جستوجو" />
+    <item
+        android:id="@+id/id_bottomNav_person"
+        android:icon="@drawable/icon_person"
+        android:title="پروفایل" />
+
+
+</menu>

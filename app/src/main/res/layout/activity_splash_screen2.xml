@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashScreen2">
+
+    <ImageView
+        android:id="@+id/header_icon2"
+        android:layout_width="@dimen/image_header_dimen2"
+        android:layout_height="@dimen/image_header_dimen2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/image_header_top_margin"
+        android:src="@drawable/zibazi"
+        app:tint="@color/MainTextColor" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="WELCOME To ECOSIEVE "
+        android:textColor="@color/MainTextColor"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/zibazi"
+                app:tint="@color/MainTextColor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Welcome"
+                    android:textColor="@color/MainTextColor"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Create an account to continue"
+                    android:textColor="#6F7477"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+            <!--Full name -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/marginRight"
+                android:background="@drawable/tb_bg2"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="@dimen/edit_text_icon_size"
+                    android:layout_height="@dimen/edit_text_icon_size"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <EditText
+                    android:id="@+id/reg_edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightEditTextSize"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/marginEditText"
+                    android:layout_marginRight="@dimen/marginEditText"
+                    android:background="@null"
+                    android:hint="Fullname"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/TextColor"
+                    android:textColorHint="@color/TextColor"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+            </LinearLayout>
+
+            <!--            Username-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/marginRight"
+                android:background="@drawable/tb_bg2"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/edit_text_icon_size"
+                    android:layout_height="@dimen/edit_text_icon_size"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <EditText
+                    android:id="@+id/reg_edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightEditTextSize"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/marginEditText"
+                    android:layout_marginRight="@dimen/marginEditText"
+
+                    android:background="@null"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/TextColor"
+                    android:textColorHint="@color/TextColor"
+                    android:textSize="@dimen/textSize"
+
+                    />
+
+            </LinearLayout>
+            <!--            password-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/marginRight"
+                android:background="@drawable/tb_bg2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/edit_text_icon_size"
+                    android:layout_height="@dimen/edit_text_icon_size"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_lock_24" />
+
+                <EditText
+                    android:id="@+id/reg_edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightEditTextSize"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/marginEditText"
+                    android:layout_marginRight="@dimen/marginEditText"
+                    android:background="@null"
+                    android:hint="Password"
+                    android:inputType="numberPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/TextColor"
+                    android:textColorHint="@color/TextColor"
+                    android:textSize="@dimen/textSize" />
+
+            </LinearLayout>
+
+            <!--            Confirm Password-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/marginRight"
+                android:background="@drawable/tb_bg2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/edit_text_icon_size"
+                    android:layout_height="@dimen/edit_text_icon_size"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_lock_24" />
+
+                <EditText
+                    android:id="@+id/reg_edt_confirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightEditTextSize"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/marginEditText"
+                    android:layout_marginRight="@dimen/marginEditText"
+                    android:background="@null"
+                    android:hint="ConfirmPassword"
+                    android:inputType="numberPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/TextColor"
+                    android:textColorHint="@color/TextColor"
+                    android:textSize="@dimen/textSize" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/marginRight"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/tb_bg"
+                android:fontFamily="sans-serif-medium"
+                android:text="Sign Up"
+                android:id="@+id/SignUp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

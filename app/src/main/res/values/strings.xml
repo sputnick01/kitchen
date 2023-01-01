@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">kitchen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_logo_name">SAINGame</string>
+    <string name="login_name">Login</string>
+    <string name="Register_name">Register</string>
+    <string name="login_user">USERNAME</string>
+    <string name="Phone_Number">PhoneNumber</string>
+    <string name="name">Name</string>
+    <string name="lastName">lastName</string>
+    <string name="login_pass">PASSWORD</string>
+    <string name="login_sub">ENTER</string>
+    <string name="login_for_pass">Forget Password</string>
+    <string name="login_reg">Register Now</string>
+    <string name="empty_todo">TODO</string>
+    <string name="hint">userName</string>
+    <string name="hint_phoneNumber">PhoneNumber</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_lastName">LastName</string>
+    <string name="username">username</string>
+    <string name="enter_password">Password</string>
+    <string name="forgot_password_sub">RESET</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="register_sub">REGISTER</string>
+
+
+</resources>
